@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/login.css">
+
+      <title>Login form - Bedimcode</title>
+   </head>
+   <body>
+      <div class="login">
+         <!-- <img src="assets/img/login-bg.png" alt="image" class="login__bg"> -->
+
+         <form action="" class="login__form" id="myForm">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="email" placeholder="Email ID" required class="login__input">
+                  <i class="ri-mail-fill"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" placeholder="Password" required class="login__input">
+                  <i class="ri-lock-2-fill"></i>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+               Don't have an account? <a href="#">Register</a>
+            </div>
+         </form>
+      </div>
+      <script>
+         // Select the form
+         const form = document.getElementById('myForm');
+     
+         // Add an event listener to the form on submit
+         form.addEventListener('submit', function(event) {
+             // Check if form is valid
+             if (form.checkValidity()) {
+                 // Prevent default form submission
+                 event.preventDefault();
+                 
+                 // Redirect to a different page after validation
+                 window.location.href = 'index.html'; // Change this to the desired URL
+             }
+         });
+     </script>
+   </body>
+</html>
