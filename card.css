@@ -1,0 +1,124 @@
+#client-page {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  /* width: 400px; pehele design ke liye ye rakha badme niche wala */
+  user-select: none;
+
+  display: block;
+  background-color: #89d2d9;
+  /* #0F4A8A #0A66C2 */
+  padding: 18px;
+  border: 5px solid black;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+
+  transition: ease;
+  transition-duration: 0.2s;
+  /* isse solve hue tha problem */
+  margin-right: 35px;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border: 2px solid #ffffff;
+}
+
+.card-list .card-link .card-image {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 50%;
+  aspect-ratio: 16 \9;
+  object-fit: cover;
+}
+.imgp{
+  display: flex;
+  
+  background-color: #89d2d9;
+}
+.card-list .card-link .badge {
+  color: #000000;
+  background-color: #89d2d9;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  margin: 16px 0 18px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.15rem;
+  color: #000;
+  font-weight: 400;
+  background-color: #89d2d9;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  transform: rotate(-45deg);
+
+  margin-left: 5px;
+  margin-bottom: 5px;
+  transition: ease;
+  transition-duration: 0.2s;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #0f4a8a;
+  background: white;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #0a66c2;
+}
+
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapperz {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}

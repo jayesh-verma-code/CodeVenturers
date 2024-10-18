@@ -21,13 +21,12 @@ body{
     height: 100vh; 
     width: 8px;
     background-color: #89d2d9;
-    height: 30%;
 }
-.phone-icon {
+.person-icon {
     position: absolute;
     left: 70px; 
     top: 35%; 
-    font-size: 25px; 
+    font-size: 30px; 
   }
   
 .check{
@@ -62,37 +61,12 @@ body{
     font-weight: 800;
     margin: 2% 4% 0% 4%;
 }
-
-.three{
-    width: 100%;
-    border: 2px solid transparent;
-    margin-top: 10%;
-    margin-left: 5%;
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    
-}
-
-.circle{
+#client-page{
     position: relative;
-    border: 1px solid black;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background-color: #89d2d9;
 }
-
-.cphone{
+.container{
+    border: 2px solid transparent;
     position: absolute;
-    top: 40%;
-    left: 40%;
-    font-size: 2rem;
-    background-color: #89d2d9;
-}
-
-pre{
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 5%;
+    top: 10%;
+    left: 10%;
 }
